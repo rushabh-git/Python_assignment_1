@@ -8,6 +8,7 @@ Q2. Why is Python called a dynamically typed language?
 Ans:- Python is a dynamically-typed language. That means the type (for example- int, double, long, etc.) for a variable is decided at run time not in advance because of this feature we don’t need to specify the type of variable.
 ********************************************************************************************************************
 Q3. List some pros and cons of Python programming language?
+
 Ans:- Pros of Python:-
 1. Python is easy to learn and read
 2. Python has a vast collection of libraries
@@ -24,6 +25,7 @@ The cons of python programming language
 5. Python is not easy to test
 ********************************************************************************************************************
 Q4. In what all domains can we use Python?
+
 Ans:-
 1 Machine learning / Artificial intelligence
 2 Desktop GUI
@@ -34,6 +36,7 @@ Ans:-
 7 Embedded systems
 ********************************************************************************************************************
 Q5. What are variable and how can we declare them?
+
 Ans:- Variable is a name given to memory location. Variables are containers for storing data values.
 # Single variable declaration
 a=10
@@ -52,6 +55,7 @@ d='Ram'
 a, b, c, d = 10, 10.23, "Ravan", 'Ram'
 ********************************************************************************************************************
 Q6. How can we take an input from the user in Python?
+
 Ans:- input( ) – This function is used to accept input from keyboard. 
 This function will stop the program flow until the user gives an input and end the input with the return key. 
 Whatever user gives as input, input function convert it into a string. If user enters an integer value still input() function convert it into a string. 
@@ -73,9 +77,11 @@ price = float ( input (“Total Price: ”) )
 mobile = complex ( input (“Enter Complex Number: ”) )
 ********************************************************************************************************************
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
-:- In python, STRING is the default datatype of the value that has been taken as an input using input() function.
+
+Ans:- In python, STRING is the default datatype of the value that has been taken as an input using input() function.
 ********************************************************************************************************************
 Q8. What is type casting?
+
 Ans:-
 Converting one data type into another data type is called type casting.
 Type of Type Conversion:-
@@ -108,15 +114,19 @@ hex (n )
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
 ********************************************************************************************************************
 Q10. What are keywords?
+
 Ans:- Keywords are reserved words in python. Each keywords have their own specific meaning. All the keywords except True , False and None are in lowercase and they must be written as they are.
 ********************************************************************************************************************
 Q11. Can we use keywords as a variable? Support your answer with reason.
+
 Ans:- We can't use keywords as a variable or function name in python. Keywords are used to define structure and syntax of python.
 ********************************************************************************************************************
 Q12. What is indentation? What's the use of indentaion in Python?
+
 Ans:- Indentation refers to the spaces at the beginning of a code line. Python uses indentation to indicate a block of code.
 ********************************************************************************************************************
 Q13. How can we throw some output in Python?
+
 Ans:-  We can display output on the screen using the print statement.The message can be a string, or any other object, the object will be converted into a string before written to the screen.
 Basic syntax of print statement.
 print(object(s), sep=separator, end=end, file=file, flush=flush)
@@ -138,6 +148,7 @@ Ex.
 print ( ) – This function is used to display a blank line.
 ********************************************************************************************************************
 Q14. What are operators in Python?
+
 Ans:- List of various operators are used in python are:-
 1 Arithmetic Operators:-
 Arithmetic operators are used to performing mathematical operations like addition, subtraction, multiplication, and division.
@@ -169,6 +180,7 @@ in            True if value is found in the sequence
 not in        True if value is not found in the sequence
 ********************************************************************************************************************
 Q15. What is difference between / and // operators?
+
 Ans: '/' is used for the normal division of two numbers.
 '//' is used to obtain the smallest integer nearest to the quotient obtained by dividing two numbers.
 If the quotient obtained by dividing two numbers is not an integer, then operators '/' and '//' will return different answers.
@@ -186,9 +198,11 @@ Q16. Write a code that gives following as an output.
 ```
 iNeuroniNeuroniNeuroniNeuron
 ```
+
 Ans:- print("iNeuroniNeuroniNeuroniNeuron")
 ********************************************************************************************************************
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+
 Ans: -
 n= int(input('Enter your number'))
 if n%2==0:
@@ -197,6 +211,7 @@ else:
     print("Number is odd")
 ********************************************************************************************************************
 Q18. What are boolean operator?
+
 Ans:- There are 3 boolean operators in python. Boolean operators are also known as logical operator. Boolean operator are as follows:
 1. or - It returns true if any one operand or expression is true otherwise it returns false.
 2. and - All expression should be true else it will return false.
@@ -212,6 +227,7 @@ True and False and True
 
 1 or 0 or 0
 ```
+
 Ans:- 
 1 or 0
 output :- 1
@@ -226,6 +242,7 @@ output :- False
 output :- 1
 ********************************************************************************************************************
 Q20. What are conditional statements in Python?
+
 Ans:- The conditional statements are as below:
 1. if statement
 2. if else statement
@@ -233,9 +250,11 @@ Ans:- The conditional statements are as below:
 4. switch statement
 ********************************************************************************************************************
 Q21. What is use of 'if', 'elif' and 'else' keywords?
+
 Ans:- 'if', 'elif' and 'else' are the conditional statement which is used to specify condition and decide the flow of statement and generate certain result according to the user need.
 ********************************************************************************************************************
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
 Ans:-
 age = int(input('Enter your age:'))
 if age >= 18:
@@ -247,6 +266,7 @@ Q23. Write a code that displays the sum of all the even numbers from the given l
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
+
 Ans:-
 numbers = [12, 75, 150, 180, 145, 525, 50]
 x= len(numbers)
@@ -259,6 +279,7 @@ print("Sum of even number: ",sum)
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 Ans:- 
+
 num1,num2,num3= input('Enter three number:').split()
 if num1 > num2 and num1 > num3:
     print(num1,"is the greatest number")
@@ -277,6 +298,7 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
+
 Ans:-
 numbers = [12, 75, 150, 180, 145, 525, 50]
 x= len(numbers)
