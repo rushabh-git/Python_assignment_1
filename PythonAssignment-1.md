@@ -112,6 +112,19 @@ hex (n )
 
 ********************************************************************************************************************
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+Ans: Ans:- The split() method is used to split the Python string, but we can use it to get the multiple values.
+Syntax:- input().split(separator, maxsplit)  
+Parameters -
+The separator parameter breaks the input by the specified separator. By default, whitespace is the specified separator.
+The split() method is used to split the Python string, but we can use it to get the multiple values.
+
+Let's understand the following example.
+a, b, c = input("Enter three values: ").split()  
+print("Enter Your First Name: ", a)  
+print("Enter Your Last Name: ", b)  
+print("Enter Your Class: ", c)  
+print()  
 ********************************************************************************************************************
 Q10. What are keywords?
 
