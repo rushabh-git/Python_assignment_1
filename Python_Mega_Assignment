@@ -1023,8 +1023,29 @@ Q84. Write a Python program to find N largest element from a list.
 Q85. Write a Python program to find cumulative sum of a list.
 ********************************************************************************************************************
 Q86. Write a Python program to check if a string is palindrome or not.
+Ans:- 
+abc = input("Enter your string:")
+print(abc[::-1])
+if(abc == abc[::-1]):
+	print("Palindrome")
+else:
+	print("Not a Palindrome")
 ********************************************************************************************************************
 Q87. Write a Python program to remove i'th element from a string.
+Ans:- 
+xyz="Hi! Are you there!"
+n=len(xyz)
+k=int(input("Enter The Number:"))
+abc=""
+i=0
+while(i<n):
+    if(i==k):
+        i+=1
+        continue
+    abc=abc+xyz[i]
+    i+=1
+print(abc)
+        
 ********************************************************************************************************************
 Q88. Write a Python program to check if a substring is present in a given string.
 ********************************************************************************************************************
