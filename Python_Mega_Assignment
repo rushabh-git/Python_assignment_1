@@ -1024,6 +1024,18 @@ else:
     print("Prime")
 ********************************************************************************************************************
 Q80. Write a Python program to check Armstrong Number.
+Ans:
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
 ********************************************************************************************************************
 Q81. Write a Python program to find the n-th Fibonacci Number.
 Ans:
@@ -1046,12 +1058,51 @@ else:
        count += 1
 ********************************************************************************************************************
 Q82. Write a Python program to interchange the first and last element in a list.
+ANs:-
+def swapList(newList):
+     
+    newList[0], newList[-1] = newList[-1], newList[0]
+ 
+    return newList
+newList = [12, 35, 9, 56, 24]
+print(swapList(newList))
+Out: [24, 35, 9, 56, 12]
 ********************************************************************************************************************
 Q83. Write a Python program to swap two elements in a list.
+Ans:-
+def swapPositions(lis, pos1, pos2):
+    temp=lis[pos1]
+    lis[pos1]=lis[pos2]
+    lis[pos2]=temp
+    return lis
+List = [23, 65, 19, 90]
+pos1, pos2 = 1, 3
+ 
+print(swapPositions(List, pos1-1, pos2-1))
+
+Out: [19, 65, 23, 90]
+
 ********************************************************************************************************************
 Q84. Write a Python program to find N largest element from a list.
+Ans:- 
+list1 = [10, 20, 4, 45, 99]
+ 
+# sorting the list
+list1.sort()
+ 
+# printing the last element
+print("Largest element is:", list1[-1])
 ********************************************************************************************************************
 Q85. Write a Python program to find cumulative sum of a list.
+Ans:-
+list=[10,20,30,40,50]
+new_list=[]
+j=0
+for i in range(0,len(list)):
+    j+=list[i]
+    new_list.append(j)
+     
+print(new_list)
 ********************************************************************************************************************
 Q86. Write a Python program to check if a string is palindrome or not.
 Ans:- 
@@ -1079,6 +1130,13 @@ print(abc)
         
 ********************************************************************************************************************
 Q88. Write a Python program to check if a substring is present in a given string.
+Ans:-
+MyString1 = "A geek in need is a geek indeed"
+ 
+if "need" in MyString1:
+    print("Yes! it is present in the string")
+else:
+    print("No! it is not present")
 ********************************************************************************************************************
 Q89. Write a Python program to find words which are greater than given length k.
 Ans:-
