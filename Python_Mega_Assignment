@@ -990,8 +990,21 @@ while(i<=5):
 print("Factorial of ",n," is ",fact)
 ********************************************************************************************************************
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+Ans:-
+p=int(input("Enter Principal value:"))
+t=int(input("Enter time::"))
+r=int(input("Enter rate:"))
+si = (p * t * r)/100
+print('The Simple Interest is', si)
 ********************************************************************************************************************
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+Ans:
+p=int(input("Enter Principal value:"))
+t=int(input("Enter time::"))
+r=int(input("Enter rate:"))
+amount = p * (pow((1 + r / 100), t))
+ci = amount - p
+print("Compound interest is", ci)
 ********************************************************************************************************************
 Q79. Write a Python program to check if a number is prime or not.
 
